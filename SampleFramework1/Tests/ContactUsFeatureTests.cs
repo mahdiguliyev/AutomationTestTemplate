@@ -29,5 +29,22 @@ namespace SampleFramework.Tests
 
             Assert.AreNotEqual(newImage, oldImage, "The slider images did not change when pressing the next button!");
         }
+        [TestMethod]
+        [Description("Validate that the sing in page opens successfully.")]
+        [TestProperty("Author", "MahdiGuliyev")]
+        public void TDID3()
+        {
+
+        }
+        [TestMethod]
+        [Description("Validate that form in the Complicated Page submit successfully.")]
+        [TestProperty("Author", "MahdiGuliyev")]
+        public void TDID4()
+        {
+            //1. open automation page with many items - https://ultimateqa.com/complicated-page/
+            //2. Fill out and submit form in the "Section of random stuff"
+            //3. validate that form was submitted successfully
+        }
+
     }
 }
