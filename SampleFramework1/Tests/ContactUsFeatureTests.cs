@@ -34,7 +34,11 @@ namespace SampleFramework.Tests
         [TestProperty("Author", "MahdiGuliyev")]
         public void TDID3()
         {
+            CoursesPage coursesPage = new CoursesPage(Driver);
+            coursesPage.Goto();
+            var signInPage = coursesPage.ClickSignInButton();
 
+            Assert.IsTrue(signInPage.IsLoaded, "Passing to Sign In page was not successfully.");
         }
         [TestMethod]
         [Description("Validate that form in the Complicated Page submit successfully.")]
