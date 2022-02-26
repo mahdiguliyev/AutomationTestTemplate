@@ -40,15 +40,5 @@ namespace SampleFramework.Tests
 
             Assert.IsTrue(signInPage.IsLoaded, "Passing to Sign In page was not successfully.");
         }
-        [TestMethod]
-        [Description("Validate that form in the Complicated Page submit successfully.")]
-        [TestProperty("Author", "MahdiGuliyev")]
-        public void TDID4()
-        {
-            //1. open automation page with many items - https://ultimateqa.com/complicated-page/
-            //2. Fill out and submit form in the "Section of random stuff"
-            //3. validate that form was submitted successfully
-        }
-
     }
 }

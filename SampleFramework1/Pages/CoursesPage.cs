@@ -42,7 +42,6 @@ namespace SampleFramework.Pages
         {
             string url = "https://courses.ultimateqa.com/collections";
             Driver.Navigate().GoToUrl(url);
-            Driver.Manage().Window.Maximize();
             Report.LogPassingTestStepForBugLogger($"Open url=> {url} for Courses Page");
             Assert.IsTrue(IsLoaded, "Courses Page was not loaded successfully.");
         }
